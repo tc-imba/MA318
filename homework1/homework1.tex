@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{indentfirst}
+\geometry{left=3.0cm,right=3.0cm,top=3.0cm,bottom=4.0cm}
+\usepackage{ctex}
+\renewcommand{\thesection}{Ex.}
+\title{MA318\ 偏微分方程\ 作业一}
+\author{刘逸灏 515370910207}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{1.1/6}
+$$\xi=x-at$$
+$$\frac{\partial F(\xi)}{\partial x}=\frac{dF}{d\xi}\frac{\partial\xi}{\partial x}=F'(\xi)$$
+$$\frac{\partial^2 F(\xi)}{\partial x^2}=\frac{\partial F'(\xi)}{\partial x}=\frac{dF'(\xi)}{d\xi}\frac{\partial\xi}{\partial x}=F''(\xi)$$
+$$\frac{\partial F(\xi)}{\partial t}=\frac{dF}{d\xi}\frac{\partial\xi}{\partial t}=-aF'(\xi)$$
+$$\frac{\partial^2 F(\xi)}{\partial t^2}=-a\frac{\partial F'(\xi)}{\partial t}=-a\frac{dF'(\xi)}{d\xi}\frac{\partial\xi}{\partial t}=a^2F''(\xi)$$
+$$\frac{\partial^2 F(\xi)}{\partial t^2}-a^2\frac{\partial^2 F(\xi)}{\partial x^2}=0$$
+
+同理，
+$$\xi=x+at$$
+$$\frac{\partial^2 G(\xi)}{\partial t^2}-a^2\frac{\partial^2 G(\xi)}{\partial x^2}=0$$
+
+\section{1.1/7}
+$$\frac{\partial u}{\partial t}=-t(t^2-x^2-y^2)^{-\frac{3}{2}}$$
+$$\frac{\partial^2 u}{\partial t^2}=3t^2(t^2-x^2-y^2)^{-\frac{5}{2}}-(t^2-x^2-y^2)^{-\frac{3}{2}}=(t^2-x^2-y^2)^{-\frac{5}{2}}(3t^2-t^2+x^2+y^2)$$
+$$\frac{\partial u}{\partial x}=x(t^2-x^2-y^2)^{-\frac{3}{2}}$$
+$$\frac{\partial^2 u}{\partial x^2}=3x^2(t^2-x^2-y^2)^{-\frac{5}{2}}+(t^2-x^2-y^2)^{-\frac{3}{2}}=(t^2-x^2-y^2)^{-\frac{5}{2}}(3x^2+t^2-x^2-y^2)$$
+$$\frac{\partial u}{\partial y}=y(t^2-x^2-y^2)^{-\frac{3}{2}}$$
+$$\frac{\partial^2 u}{\partial y^2}=3y^2(t^2-x^2-y^2)^{-\frac{5}{2}}+(t^2-x^2-y^2)^{-\frac{3}{2}}=(t^2-x^2-y^2)^{-\frac{5}{2}}(3y^2+t^2-x^2-y^2)$$
+$$3t^2-t^2+x^2+y^2=(3x^2+t^2-x^2-y^2)+(3y^2+t^2-x^2-y^2)$$
+$$\frac{\partial^2 u}{\partial t^2}=\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}$$
+
+\section{2.1/1}
+
+\section{2.1/2}
+
+\section{2.1/3}
+
+\end{document}
+ 
